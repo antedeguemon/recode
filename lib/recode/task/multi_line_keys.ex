@@ -28,17 +28,17 @@ defmodule Recode.Task.MultiLineKeys do
     end
   end
 
-  defp traverse({values, _zipper_meta} = zipper) when is_list(values) do
-    {_up_op, meta, _up_ast} = zipper |> Zipper.up() |> Zipper.node()
+  # defp traverse({values, _zipper_meta} = zipper) when is_list(values) do
+  #   {_up_op, meta, _up_ast} = zipper |> Zipper.up() |> Zipper.node()
 
-    if AST.multiline?(meta) do
-      zipper
-    else
-      zipper
-      |> Zipper.up()
-      |> Zipper.update(&to_multi_line(&1, length(values)))
-    end
-  end
+  #   if AST.multiline?(meta) do
+  #     zipper
+  #   else
+  #     zipper
+  #     |> Zipper.up()
+  #     |> Zipper.update(&to_multi_line(&1, length(values)))
+  #   end
+  # end
 
   defp traverse(zipper) do
     zipper

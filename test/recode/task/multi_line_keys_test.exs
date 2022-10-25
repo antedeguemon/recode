@@ -8,6 +8,7 @@ defmodule Recode.Task.MultiLineKeysTest do
   end
 
   describe "keyword lists" do
+    @describetag :skip
     test "multilines" do
       code = """
       [name: "Watson", car: [maker: "Ford"], home: [city: "Porto Alegre", country: "Brazil"]]
