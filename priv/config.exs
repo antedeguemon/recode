@@ -23,6 +23,7 @@ alias Recode.Task
     {Task.EnforceLineLength, []},
     {Task.KeysOrder, []},
     {Task.MultiLineKeys, []},
+    {Task.MultiLinePipes, []},
     {Task.PipeFunOne, []},
     {Task.SinglePipe, []},
     {Task.Specs, exclude: "test/**/*.{ex,exs}", config: [only: :visible]},
