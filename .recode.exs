@@ -1,7 +1,6 @@
 alias Recode.Task
 
 [
-  working_dir: ".",
   version: "0.4.0",
   # Can also be set/reset with "--autocorrect"/"--no-autocorrect".
   autocorrect: true,
